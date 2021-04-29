@@ -5,7 +5,7 @@ on:
     types: [started]
     
 env:
-  ROM_URL: https://hugeota.d.miui.com/21.4.13/miui_ALIOTH_21.4.13_6e7102ba04_11.0.zip
+  ROM_URL: https://bigota.d.miui.com/21.4.28/miui_VENUS_21.4.28_5cab179243_11.0.zip
   TZ: Asia/Shanghai
 
 jobs:
@@ -60,4 +60,4 @@ jobs:
       run: |
         cd ~
         curl -sL https://git.io/file-transfer | sh
-        ./transfer wet ~/payload_dumper/output/boot.img
+        ./transfer wet ~/payload_dumper/output/*
